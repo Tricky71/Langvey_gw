@@ -1,0 +1,103 @@
+.lw-myths {
+  padding-top: 50px;
+  background-image: url(../img/myths-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.lw-myths__desk {
+  position: relative;
+  padding-right: 30px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 150px;
+      top: 25px;
+      right: -5px;
+      background-image: url(../img/bottle-trans.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 10;
+    }
+}
+
+.lw-myths__desk-wrap {
+  height: 300px;
+  overflow: hidden;
+}
+
+.lw-myths__desk-inner {
+  animation: scroll-up 50s linear infinite;
+    & img {
+      width: 100%;
+    }
+}
+
+.lw-myths__mob {
+  display: flex;
+  flex-wrap: wrap;
+    & img {
+      width: 50%;
+        &:nth-child(2) {
+          display: none;
+        }
+    }
+}
+
+@media (min-width: 968px) {
+  .lw-myths {
+    padding-top: 3vw;
+    padding-bottom: 7.29vw;
+      & .lw-container {
+        width: 87.5vw;
+        padding: 0;
+      }
+  }
+
+  .lw-myths__wrapper {
+    display: flex;
+  }
+
+  .lw-myths__desk {
+    padding: 0;
+    margin-right: 7.24vw;
+    width: 52.08vw;
+      &::before {
+        width: 8.85vw;
+        height: 21.14vw;
+        top: 12.81vw;
+        right: -4.32vw;
+      }
+  }
+
+  .lw-myths__desk-wrap {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .lw-myths__desk-inner {
+    animation: none;
+      & img {
+        width: 100%;
+      }
+  }
+
+  .lw-myths__mob {
+    width: 23.65vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+      & img {
+        width: 100%;
+        &:nth-child(2) {
+          display: block;
+          width: 8.12vw;
+          transform: rotate(28deg);
+        }
+      }
+  }
+}
+

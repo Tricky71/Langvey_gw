@@ -1,0 +1,31 @@
+.lw-prod-research {
+  padding-top: 50px;
+  
+  background-image: url('../img/production-bg-2.png'),
+                    url('../img/water-drops-texture-background-white-design 20.png'),
+                    url('../img/water-drops-texture-background-white-design 6.png');
+  background-position: 0 0, 0 189.65vw, 0 256.25vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 968px) {
+  .lw-prod-research {
+    padding-top: 4vw;
+    padding-bottom: 57vw;
+    background-image: url('../img/production-bg-2.png');
+    background-position: 0 0;
+    background-size: cover;
+    & .lw-container {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    & .lw-production {
+      width: 50%;
+    }
+    & .lw-research {
+      width: 50%;
+    }
+  }
+}

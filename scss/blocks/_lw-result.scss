@@ -1,0 +1,45 @@
+.lw-result {
+  margin-top: -420px;
+  padding-bottom: 40px;
+}
+
+.lw-result__content {
+  margin-bottom: 50px;
+}
+
+.lw-result__thanks {
+  text-align: center;
+  font-family: 'CoreSansC', sans-serif;
+  font-size: 25px;
+  line-height: 2;
+  color: #002060;
+  border-top: 3px solid #002060;
+  border-bottom: 3px solid #002060;
+}
+
+@media (min-width: 968px) {
+  .lw-result {
+    margin-top: -37.42vw;
+    padding-bottom: 5.8vw;
+  }
+
+  .lw-result__container {
+    width: 68.06vw;
+    padding-left: 17.74vw;
+  }
+
+  .lw-result__content {
+    margin-bottom: 7.1vw;
+    padding-right: 7vw;
+      & p {
+        font-size: 1.25vw;
+        line-height: 1.5;
+      }
+  }
+
+  .lw-result__thanks {
+    font-size: 4.3vw;
+    border-top: .16vw solid #002060;
+    border-bottom: .16vw solid #002060;
+  }
+}

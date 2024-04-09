@@ -1,0 +1,18 @@
+.lw-solution {
+  padding-top: 80px;
+  background-image: url('../img/water-drops-texture-background-white-design 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media (min-width: 968px) {
+  .lw-solution {
+    padding-top: 6.67vw;
+      & .lw-container {
+        padding: 0;
+        width: 40.76vw;
+        padding-left: 4.64vw;
+      }
+  }
+}

@@ -1,0 +1,100 @@
+.lw-detail__title {
+  font-size: 19.5px;
+}
+
+.lw-detail {
+  padding-top: 50px;
+  background-image: url('../img/water-drops-texture-background-white-design 12.png'),
+                    url('../img/snow-3.png'),
+                    url('../img/water-drops-texture-background-white-design 11.png'),
+                    url('../img/water-drops-texture-background-white-design 14.png'),
+                    url('../img/water-drops-texture-background-white-design 9.png'),
+                    url('../img/water-drops-texture-background-white-design 14.png'),
+                    url('../img/water-drops-texture-background-white-design 14.png'),
+                    url('../img/water-drops-texture-background-white-design 14.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0, 0 11.456vw, 0 62.456vw, 0 129.256vw, 0 178.856vw, 0 245.556vw, 0 295.156vw, 0 344.556vw;
+  & .images-block__item {
+    &--tablet {
+      margin-left: -100px;
+      & .images-block__anim-inner {
+        animation: none;
+      }
+    }
+    &--mobile {
+      max-width: 59%;
+      margin-left: auto;
+      & .images-block__anim-wrap {
+        left: 9.9%;
+        right: 15%;
+      }
+    }
+  }
+}
+
+@media (min-width: 968px) {
+  .lw-detail {
+    height: 177vw;
+    padding-top: 50vw;
+    margin-top: -35vw;
+    background-image: url('../img/water-drops-texture-background-white-design 12.png'),
+                    url('../img/snow-3.png'),
+                    url('../img/water-drops-texture-background-white-design 11.png'),
+                    url('../img/water-drops-texture-background-white-design 14.png');
+                    // url('../img/water-drops-texture-background-white-design 14.png');
+    background-position: 0 0, 0 10.85vw, 0 62.15vw, 0 128.256vw, 0 178.856vw, 0 245.256vw;                
+    & .lw-container {
+      position: relative;
+      max-width: 56.25vw;
+      margin-right: auto;
+      margin-left: 6.25vw;
+    }
+    & .images-block__item {
+      &--tablet {
+        transform: scale(1.25);
+        margin-top: 5.73vw;
+        margin-bottom: 5.53vw;
+        margin-left: -5.21vw;
+          & .images-block__anim-wrap {
+            top: 7%;
+          }
+      }
+      &--mobile {
+        max-width: 52%;
+        width: 26.65vw;
+        position: absolute;
+        top: -13vw;
+        right: -63%;
+          & img {
+              width: 100%;
+            }
+          & .images-block__anim-wrap {
+            right: 17%;
+              
+          }
+      }
+    }
+  }
+
+  .lw-detail__title {
+    font-size: 2.08vw;
+    line-height: 2.08vw;
+  }
+
+  .lw-content {
+    & p {
+      font-size: 1.04vw;
+      line-height: 1.6;
+    }
+  }
+
+  .lw-detail__images {
+    &--desk {
+      margin-right: -3.65vw;
+        & img {
+          width: 100%;
+        }
+    }
+  }
+}

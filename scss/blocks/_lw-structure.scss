@@ -1,0 +1,49 @@
+.lw-structure {
+  padding-top: 50px;
+  background-image: url('../img/water-drops-texture-background-white-design 2 (3).png');;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.lw-structure__content {
+  margin-bottom: 40px;
+}
+
+.lw-structure__image {
+  // margin-bottom: 40px;
+  width: 100%;
+    & img {
+      width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+  .lw-structure {
+    margin-top: -14.7px;
+  }
+}
+
+@media (min-width: 968px) {
+  .lw-structure {
+    padding: 8.33vw 0 2.45vw;
+    margin-top: -.567vw;
+      & .lw-container {
+        padding: 0;
+        width: 87.5vw;
+        // padding-left: 4.64vw;
+      }
+  }
+
+  .lw-structure__content {
+    display: flex;
+    margin-bottom: 5.21vw;
+      & p {
+        width: 42.71vw;
+      }
+  }
+
+  .lw-structure__title {
+    margin-right: 7.42vw;
+  }
+}

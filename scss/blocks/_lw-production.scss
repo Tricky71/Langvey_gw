@@ -1,0 +1,32 @@
+.lw-production {
+  margin-bottom: 50px;
+  & .images-block__item {
+    &--tablet {
+      margin-left: -50px;
+    }
+  }
+}
+
+@media (min-width: 968px) {
+  .lw-production {
+    & .images-block__item {
+      &--tablet {
+        margin-left: -20.5vw;
+      }
+    }
+    & .images-block__img--border {
+      margin-top: -6.48vw;
+    }
+    & .images-block__anim-wrap {
+      right: 9%;
+      left: 28.9%;
+    }
+
+  }
+
+  .lw-production__title {
+    padding-left: 8vw;
+  }
+
+  
+}

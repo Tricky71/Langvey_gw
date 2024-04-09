@@ -1,0 +1,64 @@
+.lw-typo {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  background-image: url('../img/water-drops-texture-background-white-design-3-round.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.lw-typo__content {
+  font-family: CoreSansC, sans-serif;
+  font-size: 13px;
+  & p {
+    &:first-of-type {
+      font-family: Raleway, sans-serif;
+      margin-bottom: 35px;
+    }
+    &:nth-child(2) {
+      text-transform: lowercase
+    }
+  }
+  & ul {
+    @include reset-list;
+    display: flex;
+    margin-bottom: 15px;
+      & li {
+        margin-right: 15px;
+        font-family: CoreSansC;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+          &:last-of-type {
+            font-weight: 400;
+          }
+      }
+  }
+}
+
+@media (min-width: 968px) {
+  .lw-typo {
+    padding: 5.52vw 0 3.7vw;
+    & .lw-container {
+        padding-top: 0;
+        width: 48.66vw;
+        padding-left: 8.74vw;
+    }
+  }
+
+  .lw-typo__content {
+    & p {
+      &:first-of-type {
+        margin-bottom: 3.13vw;
+      }
+    }
+    & ul {
+      margin-bottom: 1.25vw;
+        & li {
+          margin-right: 1.88vw;
+          font-size: 1.67vw;
+          line-height: 2.08vw;
+        }
+    }
+  }
+}

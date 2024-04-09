@@ -1,0 +1,46 @@
+.lw-contacts {
+  padding-top: 100px;
+  padding-bottom: 380px;
+  margin-top: -70px;
+  background-image: url(../img/contacts-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.lw-contacts__mob {
+  max-width: 30%;
+  margin-left: auto;
+}
+
+@media (min-width: 968px) {
+  .lw-contacts {
+    padding-top: 20vw;
+    margin-top: -11vw;
+    padding-bottom: 46.05vw;
+  }
+
+  .lw-contacts__container {
+    width: 87.5vw;
+    padding: 0;
+  }
+
+  .lw-contacts__wrapper {
+    display: flex;
+  }
+
+  .lw-contacts__desk {
+    width: 58.07vw;
+    & img {
+      width: 100%;
+    }
+  }
+
+  .lw-contacts__mob {
+    width: 23.7vw;
+    margin-top: -2.5vw;
+      & img {
+        width: 100%;
+      }
+  }
+}

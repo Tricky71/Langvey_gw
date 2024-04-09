@@ -1,0 +1,20 @@
+.lw-production-mob {
+  display: flex;
+    & img {
+      width: 40%;
+    }
+}
+
+@media (min-width: 968px) {
+  .lw-production-mob {
+    width: 100%;
+    padding-left: 5.36vw;
+    padding-right: 7.92vw;
+      & img {
+        width: 27.5%;
+          &:last-child {
+            margin-left: auto;
+          }
+      }
+  }
+}

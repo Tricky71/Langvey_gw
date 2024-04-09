@@ -1,0 +1,28 @@
+.lw-design {
+  padding-top: 50px;
+  padding-bottom: 240px;
+  margin-top: -120px;
+  // padding: 16.65vw 0 2.6vw;
+  background-image: url('../img/mountains-bg-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@media (min-width: 968px) {
+  .lw-design {
+    background-image: url('../img/mountains-bg.png');
+    margin-top: -9.41vw;
+    padding: 14.65vw 0 23.6vw;
+    & .lw-container {
+        padding-top: 0;
+        width: 59.26vw;
+        padding-left: 13.74vw;
+    }
+    & .lw-content {
+      & p {
+        margin-bottom: .38vw;
+      }
+    }
+  }
+}

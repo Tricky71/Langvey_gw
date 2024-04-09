@@ -1,0 +1,34 @@
+.lw-mood {
+  padding-top: 50px;
+  background-image: url('../img/water-drops-texture-background-white-design 4.png'),
+                    url('../img/mood-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.lw-mood__title {
+  margin-bottom: 90px;
+}
+
+
+@media (min-width: 968px) {
+  .lw-mood {
+    padding-top: 6.33vw;
+      & .lw-container {
+        padding: 0;
+        width: 87.5vw;
+      }
+  }
+
+  .lw-mood__title {
+    margin-bottom: 1.46vw;
+  }
+
+  .lw-mood__image {
+    margin-top: -3.29vw;
+    & img {
+      width: 100%;
+    }
+  }
+}

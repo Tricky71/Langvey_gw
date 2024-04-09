@@ -1,0 +1,62 @@
+.lw-product {
+  padding-top: 50px;
+  background-image: url('../img/water-drops-texture-background-white-design 7.png'),
+                    url('../img/water-drops-texture-background-white-design 6.png'),
+                    url('../img/water-drops-texture-background-white-design 7.png'),
+                    url('../img/water-drops-texture-background-white-design 6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0, 0 66.76vw, 0 calc((100vw / 1.5) * 2), 0 calc((100vw / 1.5) * 3);
+}
+
+.lw-product__content {
+  margin-bottom: 20px;
+}
+
+.lw-product__images--desk {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 968px) {
+  .lw-product {
+    margin-top: -119.28vw;
+    padding: 23.85vw 0 2.6vw;
+    background-image: url('../img/water-drops-texture-background-white-design 7.png'),
+                    url('../img/water-drops-texture-background-white-design 3.png');
+    // background-position: 0 25.4vw, 0 calc(100vw / 1.5) + 24.8vw;
+    background-position: 0 23.85vw, 0 calc(100vw / 1.5) + 23.2vw;
+    & .lw-container {
+        padding-top: 0;
+        width: 65.66vw;
+        padding-left: 17.74vw;
+    }
+    & .lw-content {
+      margin-bottom: 0;
+      & p {
+        font-size: 1vw;
+        // &:last-of-type {
+        //   margin-bottom: 3.13vw;
+        // }
+      }
+    }
+
+  }
+  .lw-product__images {
+    &--desk {
+      width: 58.55vw;
+      margin-left: auto;
+      margin-right: 7.22vw;
+      margin-bottom: 7.8vw;
+      & img {
+        width: 100%;
+      }
+    }
+    &--mobile {
+      width: 64.39vw;
+      margin-left: auto;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.lw-main {
+  padding-top: 50px;
+  margin-top: -230px;
+  background-image: url('../img/Rectangle 1467-2.png'),
+                    url('../img/water-drops-texture-background-white-design 6.png'),
+                    url('../img/water-drops-texture-background-white-design 7.png'),
+                    url('../img/water-drops-texture-background-white-design 8.png'),
+                    url('../img/water-drops-texture-background-white-design 3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 bottom, 0 230px, 0 calc((100vw / 1.5) + 230px),  0 calc(((100vw / 1.5) * 2) + 230px), 0 calc(((100vw / 1.5) * 3) + 230px),;
+    & .images-block__item {
+      &--desk {
+        max-width: 50%;
+      }
+      &--add {
+        max-width: 30%;
+        position: absolute;
+      }
+      &--mobile {
+        max-width: 59%;
+        margin-left: auto;
+      }
+    }
+}
+
+@media (min-width: 968px) {
+  .lw-main {
+    height: 336.23vw;
+    margin-top: -17.41vw;
+    padding: 0;
+    // background-image: url('../img/Rectangle 1467-2.png'),
+    //                 url('../img/water-drops-texture-background-white-design 6.png'),
+    //                 url('../img/water-drops-texture-background-white-design 7.png'),
+    //                 url('../img/water-drops-texture-background-white-design 8.png'),
+    //                 url('../img/water-drops-texture-background-white-design 3.png');
+    background-position: 0 160.38vw, 0 17.386vw, 0 83.393vw, 0 149.4vw, 0 218.4vw;
+    // background-position: 0 17.38vw, 0 calc((100vw / 1.515) + 17.38vw), 0 calc(((100vw / 1.515) * 2) + 17.38vw), 0 160vw, 0 calc(((100vw / 1.515) * 3) + 17.38vw);
+    & .lw-container {
+        padding-top: 0;
+        width: 59.26vw;
+        padding-left: 13.74vw;
+    }
+    & .images-block__wrapper {
+      position: relative;
+      max-width: 67.6vw;
+      margin-left: auto;
+      margin-right: 2.5vw;
+    }
+    & .images-block__item {
+      &--desk {
+        position: absolute;
+        width: 42.81vw;
+        max-width: 42.81vw;
+        top: 7vw;
+        left: -28vw;
+        z-index: 10;
+      }
+      &--add {
+        max-width: 30.52vw;
+        width: 30.52vw;
+        left: -30vw;
+      }
+      &--mobile {
+        max-width: 26.74vw;
+        width: 26.74vw;
+        margin: 0;
+        position: absolute;
+        left: -22vw;
+        top: 95vw;
+      }
+    }
+  }
+}

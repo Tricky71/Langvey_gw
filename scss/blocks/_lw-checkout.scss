@@ -1,0 +1,35 @@
+.lw-checkout {
+  padding-top: 50px;
+  position: relative;
+  background-image: url(../img/checkout-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 10;
+}
+
+.lw-checkout__content {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 968px) {
+  .lw-checkout {
+    margin-bottom: 1.56vw;
+  }
+
+  .lw-checkout__container {
+    width: 87.5vw;
+    padding: 0;
+  }
+
+  .lw-checkout__content {
+    max-width: 73.17vw;
+    margin-bottom: 0;
+  }
+
+  .lw-checkout__image {
+    & img {
+      width: 100%;
+    }
+  }
+}
